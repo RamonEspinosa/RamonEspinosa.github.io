@@ -35,7 +35,7 @@ Simply run `npm start` and go to [your localhost](http://localhost:3000).
 ### Deployment
 
 1. Push your changes to the `dev` branch.
-2. Run `npm deploy`.
+2. Run `npm run deploy`.
 3. Go to [the live version](https://ramonespinosa.github.io/) to verify the deployment was successful.
 
 ### Roadmap
