@@ -55,8 +55,8 @@ const Curriculum = () => {
       <div className="w-full">
         <div className="container mx-auto">
           <div className="flex justify-around flex-wrap">
-            <Card className="w-11/12 lg:w-2/6 dark:bg-gray-800 dark:text-gray-100 my-5">
-              <div className="divide-y-2 divide-solid divide-gray-600 dark:divide-green-700">
+            <Card className="w-11/12 lg:w-2/6 bg-gray-900 text-gray-100 my-5">
+              <div className="divide-y-2 divide-solid divide-green-700">
                 <p className="text-2xl pb-1">Who am I?</p>
                 <p className="text-lg text-justify pt-2">
                   Hello there! I'm Juan Espinosa and I'm {getAge(BIRTH_DATE)}{" "}
@@ -74,8 +74,8 @@ const Curriculum = () => {
                 </p>
               </div>
             </Card>
-            <Card className="w-11/12 lg:w-2/6 dark:bg-gray-800 dark:text-gray-100 my-5">
-              <div className="divide-y-2 divide-solid divide-gray-600 dark:divide-green-700">
+            <Card className="w-11/12 lg:w-2/6 bg-gray-900 text-gray-100 my-5">
+              <div className="divide-y-2 divide-solid divide-green-700">
                 <p className="text-2xl pb-1">Skills</p>
                 <div className="text-lg w-full pt-2">
                   <table className="table-auto w-full">

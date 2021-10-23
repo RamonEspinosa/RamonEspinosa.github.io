@@ -2,7 +2,6 @@ import ROUTES, { DEFAULT_BEHAVIOUR } from "../../utils/navigation";
 const jumpToElement = (id: string) => {
   const element = document.getElementById(id);
   if (element) {
-    
     if (navigator.userAgent.indexOf("Firefox") > 0) {
       element.scrollIntoView({
         block: "end",
@@ -23,7 +22,7 @@ const Link = (props: LinkProps) => {
   return (
     <span
       onClick={props.onClick}
-      className="hover:underline cursor-pointer text-white dark:text-white"
+      className="hover:underline cursor-pointer text-white"
     >
       {props.children}
     </span>
@@ -31,19 +30,20 @@ const Link = (props: LinkProps) => {
 };
 const NavbarLinks = () => {
   return (
-    <div  className="hidden md:flex">
+    <div className="hidden md:flex mx-auto">
       <nav>
-        <ul className="list-none flex justify-between gap-10">
+        <ul className="list-none flex justify-between gap-20">
           {Object.entries(ROUTES).map(([key, value]) => {
             return (
-              <Link
-                key={key}
-                onClick={() => {
-                  jumpToElement(value.route);
-                }}
-              >
-                {value.human}
-              </Link>
+              <li key={key}>
+                <Link
+                  onClick={() => {
+                    jumpToElement(value.route);
+                  }}
+                >
+                  {value.human}
+                </Link>
+              </li>
             );
           })}
         </ul>

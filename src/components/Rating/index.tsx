@@ -5,9 +5,7 @@ interface Props {
   className?: string;
 }
 const generateStar = (StarType: IconType, index: number) => {
-  return (
-    <StarType key={index} className="text-yellow-600 dark:text-yellow-300" />
-  );
+  return <StarType key={index} className="text-yellow-300" />;
 };
 const getStars = (rating: number) => {
   const stars = [];

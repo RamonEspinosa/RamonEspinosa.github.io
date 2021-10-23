@@ -8,10 +8,7 @@ interface Props {
 const ContactInput = (props: Props) => {
   return (
     <div className="my-5">
-      <label
-        htmlFor={props.name}
-        className="focus:text-xs text-sm dark:text-white"
-      >
+      <label htmlFor={props.name} className="focus:text-xs text-sm text-white">
         {props.title}
       </label>
       <input

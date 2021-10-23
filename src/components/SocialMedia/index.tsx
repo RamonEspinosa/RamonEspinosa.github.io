@@ -10,7 +10,7 @@ const PHONE_NUMBER = "+52 55 47 15 33 51";
 const SocialMedia = () => {
   return (
     <div className="w-11/12 md:w-4/12 flex flex-col">
-      <p className="text-3xl text-center font-bold text-black dark:text-white w-full">
+      <p className="text-3xl text-center font-bold text-white w-full">
         You may also find me in
       </p>
       <div className="w-full flex justify-center items-center h-full  space-x-5">
