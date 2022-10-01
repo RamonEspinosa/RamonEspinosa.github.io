@@ -1,10 +1,10 @@
 const colors = {
   brand: {
-    alpha: "hsl(278, 87%, 18%)",
-    beta: "hsl(261, 86%, 20%)",
-    gamma: "hsl(245, 78%, 16%)",
-    delta: "hsl(229, 86%, 20%)",
-    epsilon: "hsl(213, 87%, 18%)",
+    alpha: "hsl(221, 81%, 10%)",
+    beta: "hsl(253, 72%, 25%)",
+    gamma: "hsl(27, 65%, 27%)",
+    delta: "hsl(54, 98%, 22%)",
+    epsilon: "hsl(189, 88%, 23%)",
   },
 };
 

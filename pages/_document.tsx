@@ -9,7 +9,7 @@ import { ServerStyleSheet } from "styled-components";
 
 export default function CustomDocument() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
