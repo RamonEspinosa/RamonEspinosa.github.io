@@ -34,7 +34,7 @@ interface NavLinkProps {
 
 const NavLink = styled.a`
   color: ${colors.brand.delta};
-  font-weight: ${font.weight.bold};
+  font-weight: 700;
   text-decoration: none;
   font-size: ${font.size[18]};
   ${(props: NavLinkProps) =>

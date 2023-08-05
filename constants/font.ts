@@ -1,7 +1,7 @@
 export const BASE_FONT_SIZE = 16;
 
 const generateFontSize = (from, to) =>
-  Array.from({ length: to - from })
+  Array.from({ length: to - from + 1 })
     .map((_, i) => i)
     .reduce((prev, current) => {
       prev[from + current] = `${(from + current) / BASE_FONT_SIZE}rem`;
@@ -9,14 +9,10 @@ const generateFontSize = (from, to) =>
     }, {});
 
 const font = {
-  primary: `"Raleway", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+  primary: `"Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`,
   secondary: `"Source Code Pro", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
   helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif`,
-
-  weight: {
-    bold: 700,
-  },
-  size: generateFontSize(8, 24),
+  size: generateFontSize(8, 96),
 };
 export default font;
