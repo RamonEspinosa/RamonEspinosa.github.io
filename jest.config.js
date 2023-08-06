@@ -10,6 +10,9 @@ module.exports = {
       },
     ],
   },
+  moduleNameMapper: {
+    "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules",
+  },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],

@@ -1,0 +1,28 @@
+.about {
+  &__section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-inline: auto;
+    max-width: var(--breakpoint-desktop-min);
+    @media (min-width: 1100px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+  &__placeholder {
+    color: var(--white);
+    width: min(400px, 90%);
+    aspect-ratio: 1/1;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+}
