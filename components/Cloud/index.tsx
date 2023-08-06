@@ -22,9 +22,9 @@ const Cloud = () => {
     map: getRandomElement(smokeTextures),
     opacity: 0.3,
     transparent: true,
-    alphaTest: 0.1,
   });
   const elementRefs = useRef<SmokeRef[]>([]);
+
   useFrame((state, delta) => {
     elementRefs.current.forEach(({ props, direction }) =>
       props.rotateZ(delta * 0.1 * direction)
