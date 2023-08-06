@@ -41,6 +41,7 @@ const Contact = () => {
               <m.a
                 className={styles.contact__link}
                 whileHover={{ scale: 1.2 }}
+                target="_blank"
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <Icon aria-label={label} />
