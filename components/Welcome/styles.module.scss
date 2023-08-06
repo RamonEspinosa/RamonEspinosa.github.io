@@ -6,6 +6,7 @@
     justify-content: center;
     text-align: center;
     gap: var(--spacing-lg);
+    pointer-events: auto;
     @media (min-width: 1100px) {
       text-align: start;
     }

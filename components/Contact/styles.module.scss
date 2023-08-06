@@ -9,6 +9,7 @@
     justify-content: space-around;
   }
   &__element {
+    pointer-events: auto;
     text-align: center;
     vertical-align: middle;
     :hover {
