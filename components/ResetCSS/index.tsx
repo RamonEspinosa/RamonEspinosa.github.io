@@ -30,4 +30,13 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
   height: 100%;
 }
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 `;

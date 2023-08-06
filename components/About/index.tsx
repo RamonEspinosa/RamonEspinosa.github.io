@@ -2,12 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import Welcome from "components/Welcome";
 import queries, { breakpoints } from "constants/queries";
+import Contact from "components/Contact";
+import spacing from "constants/spacing";
 
 const About = () => {
   return (
     <Section>
-      <Welcome />
-      <TestComponent />
+      <Container>
+        <Welcome />
+        <Contact />
+      </Container>
+
+      <Pic />
     </Section>
   );
 };
@@ -27,7 +33,13 @@ const Section = styled.section`
   }
 `;
 
-const TestComponent = styled.div`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${spacing.lg};
+`;
+
+const Pic = styled.div`
   color: white;
   width: min(400px, 90%);
   aspect-ratio: 1/1;

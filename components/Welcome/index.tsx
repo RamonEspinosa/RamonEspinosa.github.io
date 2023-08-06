@@ -1,6 +1,7 @@
 import colors from "constants/colors";
 import font from "constants/font";
 import queries from "constants/queries";
+import spacing from "constants/spacing";
 import React from "react";
 import styled from "styled-components";
 
@@ -22,6 +23,7 @@ const WelcomeImpl = styled.div`
   align-items: flex-start;
   justify-content: center;
   text-align: center;
+  gap: ${spacing.lg};
   @media ${queries.laptopAndUp} {
     text-align: start;
   }
@@ -33,6 +35,8 @@ const MainTitle = styled.h1`
   font-weight: 500;
   font-size: ${font.size[20]};
   color: ${colors.gray[400]};
+  line-height: 1;
+  gap: ${spacing.xxs};
   @media ${queries.laptopAndUp} {
     font-size: ${font.size[40]};
   }
@@ -42,7 +46,7 @@ const Name = styled.span`
   font-weight: 700;
   display: block;
   letter-spacing: -0.2px;
-  line-height: 1.2;
+
   font-size: ${font.size[48]};
   color: ${colors.white};
   @media ${queries.laptopAndUp} {
@@ -54,6 +58,7 @@ const Description = styled.span`
   font-weight: 300;
   letter-spacing: 0.4px;
   color: ${colors.white};
+  line-height: 1;
   @media ${queries.laptopAndUp} {
     font-size: ${font.size[32]};
   }
