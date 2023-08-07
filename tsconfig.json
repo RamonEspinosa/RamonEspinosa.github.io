@@ -16,7 +16,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "types": ["node", "jest", "@testing-library/jest-dom"],
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "strictNullChecks": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
