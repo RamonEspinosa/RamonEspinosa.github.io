@@ -12,14 +12,15 @@ import gradients from "./gradients";
 
 const Title = () => {
   const [gradient, setGradient] = useState(0);
-  const x = useMotionValue(gradient);
-  const spring = useSpring(x, {
+  const motionValue = useMotionValue(gradient);
+
+  const spring = useSpring(motionValue, {
     bounce: 0,
   });
 
   useEffect(() => {
-    x.set(gradient);
-  }, [gradient, x]);
+    motionValue.set(gradient);
+  }, [gradient, motionValue]);
 
   const backgroundImage = useTransform(
     spring,
