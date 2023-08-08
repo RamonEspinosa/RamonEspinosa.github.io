@@ -1,9 +1,5 @@
 .main {
   height: 100%;
   position: relative;
-  &__content {
-    height: 100%;
-    position: relative;
-    pointer-events: none;
-  }
+  background-color: var(--black);
 }
