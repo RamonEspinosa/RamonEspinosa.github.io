@@ -13,14 +13,14 @@
     text-align: center;
     vertical-align: middle;
     :hover {
-      color: var(--gray-300);
+      color: var(--gamma);
     }
   }
   &__link {
     display: block;
-    background-color: var(--gray-900);
+    background-color: var(--alpha);
+    color: var(--white);
     padding: var(--spacing-sm);
     border-radius: 50%;
-    color: var(--white);
   }
 }
