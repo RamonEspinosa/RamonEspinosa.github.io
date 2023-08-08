@@ -53,7 +53,7 @@ const Welcome = () => {
     <div className={styles.welcome__wrapper}>
       <Title />
       <span className={styles.welcome__description}>
-        A senior full-stack developer
+        A senior front-end developer
       </span>
     </div>
   );

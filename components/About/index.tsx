@@ -17,7 +17,7 @@ const About = () => {
           src={profilePic}
           alt="Juan Lopez headshot"
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(min-width: 550px) 90vw,  400px"
         />
       </div>
     </section>
