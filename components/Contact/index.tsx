@@ -4,7 +4,14 @@ import React from "react";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import styles from "./styles.module.scss";
 
-const links = [
+interface Link {
+  to: string;
+  label: string;
+  Icon: (props: unknown) => JSX.Element;
+  target?: React.HTMLAttributeAnchorTarget;
+}
+
+const links: Link[] = [
   {
     to: "https://github.com/RamonEspinosa",
     label: "Github",
@@ -12,12 +19,9 @@ const links = [
   },
 
   {
-    to: "#",
+    to: "/files/CV.pdf",
     label: "Download resume",
     Icon: Resume,
-    props: {
-      download: true,
-    },
   },
   {
     to: "mailto:espinosalopezjuanramon@gmail.com",
@@ -28,6 +32,7 @@ const links = [
     to: "tel:+17788362229",
     label: "Call or text me",
     Icon: Phone,
+    target: "_self",
   },
 ];
 
@@ -35,13 +40,13 @@ const Contact = () => {
   return (
     <LazyMotion features={domAnimation}>
       <ul className={styles.contact__list}>
-        {links.map(({ Icon, label, to, props }) => (
+        {links.map(({ Icon, label, to, target = "_blank" }) => (
           <li className={styles.contact__element} key={label}>
-            <Link href={to} passHref {...props}>
+            <Link href={to} passHref>
               <m.a
                 className={styles.contact__link}
                 whileHover={{ scale: 1.2 }}
-                target="_blank"
+                target={target}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <Icon aria-label={label} />
