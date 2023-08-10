@@ -1,10 +1,13 @@
-name: Build & deploy
+name: Deploy
 
 on:
   push:
     branches: [dev]
+env:
+  BUILD_DIR: ./out
+  DOMAIN: iamjuan.dev
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,9 +16,12 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+      - name: Add CNAME
+        run: echo ${{env.DOMAIN}} >> ${{env.BUILD_DIR}}/CNAME
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ${{env.BUILD_DIR}}
           publish_branch: master
+          enable_jekyll: false
