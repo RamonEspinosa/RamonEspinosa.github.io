@@ -1,9 +1,7 @@
-name: Build
+name: Build & deploy
 
 on:
   push:
-    branches: [dev]
-  pull_request:
     branches: [dev]
 jobs:
   build:
@@ -15,3 +13,4 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+      - run: npm run deploy
