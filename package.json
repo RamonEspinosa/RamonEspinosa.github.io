@@ -7,7 +7,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "deploy": "gh-pages -b master -d out"
+    "deploy": "npm run build && gh-pages -b master -d out"
   },
   "dependencies": {
     "@react-three/fiber": "8.13.6",
