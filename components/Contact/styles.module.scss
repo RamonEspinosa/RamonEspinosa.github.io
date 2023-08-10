@@ -1,0 +1,26 @@
+.contact {
+  &__list {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__element {
+    pointer-events: auto;
+    text-align: center;
+    vertical-align: middle;
+    :hover {
+      color: var(--gamma);
+    }
+  }
+  &__link {
+    display: block;
+    background-color: var(--alpha);
+    color: var(--white);
+    padding: var(--spacing-sm);
+    border-radius: 50%;
+  }
+}

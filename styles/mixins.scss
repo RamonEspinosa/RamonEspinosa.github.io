@@ -1,0 +1,8 @@
+$BASE_FONT_SIZE: 16;
+
+@mixin generate-font-size($from, $to) {
+  @for $i from $from through $to {
+    $font-size: $i / $BASE_FONT_SIZE * 1rem;
+    --font-size-#{$i}: #{$font-size};
+  }
+}
