@@ -14,6 +14,7 @@ const About = () => {
       </div>
       <div className={styles.about__frame}>
         <Image
+          className={styles.about__picture}
           src={profilePic}
           alt="Juan Lopez headshot"
           priority
