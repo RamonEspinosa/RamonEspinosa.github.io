@@ -42,15 +42,14 @@ const Contact = () => {
       <ul className={styles.contact__list}>
         {links.map(({ Icon, label, to, target = "_blank" }) => (
           <li className={styles.contact__element} key={label}>
-            <Link href={to} passHref>
-              <m.a
+            <Link href={to} target={target}>
+              <m.span
                 className={styles.contact__link}
                 whileHover={{ scale: 1.2 }}
-                target={target}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <Icon aria-label={label} />
-              </m.a>
+              </m.span>
             </Link>
           </li>
         ))}
