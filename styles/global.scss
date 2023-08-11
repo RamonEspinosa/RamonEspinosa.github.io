@@ -1,18 +1,6 @@
 @use "./mixins.scss" as *;
 
-@font-face {
-  font-family: "Adjusted Arial Fallback";
-  src: local(Arial);
-  size-adjust: 106%;
-  ascent-override: normal;
-  descent-override: normal;
-  line-gap-override: normal;
-}
-
 :root {
-  --font-primary: "Inter", "Adjusted Arial Fallback", -apple-system,
-    BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
-    Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   @include generate-font-size(8, 96);
 
   --white: hsl(0, 0%, 100%);
