@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 import Intro from "components/Intro";
 import Main from "components/Main";
+import About from "components/About";
+import HomeLayout from "components/HomeLayout";
 
 const Home = () => {
   return (
@@ -14,7 +16,10 @@ const Home = () => {
         />
       </Head>
       <Main>
-        <Intro />
+        <HomeLayout>
+          <Intro />
+          <About />
+        </HomeLayout>
       </Main>
     </>
   );
