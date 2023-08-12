@@ -5,16 +5,16 @@ import Image from "next/image";
 import styles from "./styles.module.scss";
 import profilePic from "public/images/me.webp";
 
-const About = () => {
+const Intro = () => {
   return (
-    <section className={styles.about__section}>
-      <div className={styles.about__container}>
+    <section className={styles.intro__section}>
+      <div className={styles.intro__container}>
         <Welcome />
         <Contact />
       </div>
-      <div className={styles.about__frame}>
+      <div className={styles.intro__frame}>
         <Image
-          className={styles.about__picture}
+          className={styles.intro__picture}
           src={profilePic}
           alt="Juan Lopez headshot"
           priority
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Intro;

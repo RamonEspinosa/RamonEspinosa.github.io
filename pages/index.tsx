@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import About from "components/About";
+import Intro from "components/Intro";
 import Main from "components/Main";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
         />
       </Head>
       <Main>
-        <About />
+        <Intro />
       </Main>
     </>
   );
