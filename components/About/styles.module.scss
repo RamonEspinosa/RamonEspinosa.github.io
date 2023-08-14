@@ -1,0 +1,12 @@
+.about {
+  &__biography {
+    max-width: 80ch;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  &__section {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
