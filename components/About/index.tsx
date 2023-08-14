@@ -6,13 +6,9 @@ const About = () => {
     <section className={styles.about__section}>
       <article className={styles.about__biography}>
         <h2>Get to know me better</h2>
+
         <p>
-          TL;DR: Began with Age of Empires 2, now a computer systems engineer.
-          My journey involved tech courses, jobs, and collaborations, yielding
-          5+ years of experience.
-        </p>
-        <p>
-          My journey started when my brother taught me how to play Age of
+          My journey started at 8, when my brother taught me how to play Age of
           Empires 2 on our first PC, a Compaq Presario S5100NX. Even today, that
           game holds a special place in our hearts.
         </p>
@@ -31,7 +27,7 @@ const About = () => {
           friends, I graduated with honors.
         </p>
         <p>
-          I got my first full-time job at a local company as a full-stack
+          Then, I got my first full-time job at a local company as a full-stack
           developer. However, the stress drove me to seek new horizons after a
           year. And that&apos;s how I ended up at Prixz, where I met other
           developers like Hugo and Andres who shaped my career and taught me a
@@ -46,6 +42,11 @@ const About = () => {
           This is how I migrated to Canada, where I first met (physically)
           David, Chris, and Gokul whom I greatly appreciate for all the support
           and mentorship they have given me.
+        </p>
+        <p>
+          <span className={styles.about__tldr}>TL;DR:</span> Began with Age of
+          Empires 2, now a computer systems engineer. My journey involved tech
+          courses, jobs, and collaborations, yielding 5+ years of experience.
         </p>
       </article>
     </section>
