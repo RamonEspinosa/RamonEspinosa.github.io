@@ -7,6 +7,7 @@
     align-items: center;
     margin-inline: auto;
     max-width: var(--breakpoint-desktop-min);
+    padding-block: 80px;
     @media (min-width: 1100px) {
       flex-direction: row;
       align-items: center;
@@ -28,5 +29,6 @@
   }
   &__picture {
     height: auto;
+    width: 100%;
   }
 }
