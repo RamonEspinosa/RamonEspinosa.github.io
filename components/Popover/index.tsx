@@ -22,7 +22,7 @@ import {
 } from "@floating-ui/react";
 
 const ARROW_HEIGHT = 7;
-const ARROW_GAP = 3;
+const ARROW_GAP = 2;
 
 interface PopoverOptions {
   initialOpen?: boolean;

@@ -66,7 +66,7 @@ const About = () => {
           I first interacted with a computer at 8, when my brother taught me how
           to play{" "}
           <CustomPopover
-            heading="Wololo!"
+            heading="Wololo"
             message={
               <span>
                 Everytime the game was launched, this{" "}
