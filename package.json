@@ -10,6 +10,7 @@
     "deploy": "npm run build && gh-pages -b master -d out"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.25.1",
     "@react-three/fiber": "8.13.6",
     "framer-motion": "^10.15.1",
     "next": "13.4.13",
@@ -19,6 +20,7 @@
     "three": "0.155.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "14.0.0",
     "@types/jest": "^29.5.3",
