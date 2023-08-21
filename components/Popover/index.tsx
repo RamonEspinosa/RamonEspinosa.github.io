@@ -20,6 +20,7 @@ import {
   FloatingArrow,
   FloatingArrowProps,
 } from "@floating-ui/react";
+import { AnimatePresence, m, LazyMotion, domAnimation } from "framer-motion";
 
 const ARROW_HEIGHT = 7;
 const ARROW_GAP = 2;
@@ -207,20 +208,28 @@ export const PopoverContent = React.forwardRef<
   return (
     <FloatingPortal>
       <FloatingFocusManager context={floatingContext} modal={context.modal}>
-        <div
-          ref={ref}
-          style={{ ...context.floatingStyles, ...style }}
-          aria-labelledby={context.labelId}
-          aria-describedby={context.descriptionId}
-          {...context.getFloatingProps({ ...props })}
-        >
-          {props.children}
-          <FloatingArrow
-            {...context.arrowProps}
-            context={floatingContext}
-            ref={context.arrowRef}
-          />
-        </div>
+        <LazyMotion features={domAnimation}>
+          <AnimatePresence>
+            <m.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              ref={ref}
+              style={{ ...context.floatingStyles, ...style }}
+              aria-labelledby={context.labelId}
+              aria-describedby={context.descriptionId}
+              {...context.getFloatingProps({ ...props })}
+            >
+              {props.children}
+              <FloatingArrow
+                {...context.arrowProps}
+                context={floatingContext}
+                ref={context.arrowRef}
+              />
+            </m.div>
+          </AnimatePresence>
+        </LazyMotion>
       </FloatingFocusManager>
     </FloatingPortal>
   );
@@ -261,7 +270,7 @@ export const PopoverDescription = React.forwardRef<
     return () => setDescriptionId(undefined);
   }, [id, setDescriptionId]);
 
-  return <p {...props} ref={ref} id={id} />;
+  return <div {...props} ref={ref} id={id} />;
 });
 
 export const PopoverClose = React.forwardRef<
