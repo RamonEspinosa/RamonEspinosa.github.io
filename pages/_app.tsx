@@ -19,3 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+console.log(
+  `
+Hello there! 👋
+Want to see me in action as I build this website from scratch, step by step? 👷‍♂️
+I've put together an awesome video just for you. Click the link below to watch the magic happen! 🎥🚀
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  `
+);
