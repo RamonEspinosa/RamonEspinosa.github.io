@@ -4,6 +4,7 @@ import Intro from "components/Intro";
 import Main from "components/Main";
 import About from "components/About";
 import HomeLayout from "components/HomeLayout";
+import Experience from "components/Experience";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <HomeLayout>
           <Intro />
           <About />
+          <Experience />
         </HomeLayout>
       </Main>
     </>
