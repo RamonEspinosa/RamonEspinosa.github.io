@@ -16,16 +16,16 @@
     flex-direction: column;
     gap: var(--spacing-md);
     padding-left: calc(1em + 1ch);
+    list-style: none;
   }
   &__entry {
     position: relative;
-    &::before {
-      content: "⚬";
-      display: block;
+    &-dot {
       position: absolute;
       right: calc(100% + 1em);
       text-align: center;
       width: 1ch;
+      user-select: none;
     }
     &-line {
       position: absolute;
