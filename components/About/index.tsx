@@ -1,46 +1,7 @@
-import {
-  Popover,
-  PopoverClose,
-  PopoverContent,
-  PopoverDescription,
-  PopoverHeading,
-  PopoverTrigger,
-} from "components/Popover";
 import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.scss";
-
-const CustomPopover = ({
-  children,
-  message,
-  heading,
-}: {
-  children: React.ReactNode;
-  message: React.ReactNode;
-  heading: React.ReactNode;
-}) => {
-  return (
-    <Popover
-      arrowProps={{
-        className: styles["about__popover-arrow"],
-      }}
-      placement="top"
-    >
-      <PopoverTrigger className={styles["about__popover-trigger"]}>
-        {children}
-      </PopoverTrigger>
-      <PopoverContent className={styles["about__popover-content"]}>
-        <PopoverHeading className={styles["about__popover-heading"]}>
-          {heading}
-        </PopoverHeading>
-        <PopoverDescription className={styles["about__popover-description"]}>
-          {message}
-        </PopoverDescription>
-        <PopoverClose className="visually-hidden">Close</PopoverClose>
-      </PopoverContent>
-    </Popover>
-  );
-};
+import Popover from "components/Popover/Default";
 
 const wizards = [
   {
@@ -65,7 +26,7 @@ const About = () => {
         <p>
           I first interacted with a computer at 8, when my brother taught me how
           to play{" "}
-          <CustomPopover
+          <Popover
             heading="Wololo"
             message={
               <span>
@@ -81,7 +42,7 @@ const About = () => {
             }
           >
             Age of Empires 2
-          </CustomPopover>{" "}
+          </Popover>{" "}
           on our first PC, a Compaq Presario S5100NX. Even today, that game
           holds a special place in our hearts.
         </p>
@@ -89,7 +50,7 @@ const About = () => {
           With limited internet access at the time, I turned to Microsoft
           Encarta for my homework needs. Occasionally, I&apos;d become bored,
           prompting me to explore other software like Minesweeper or{" "}
-          <CustomPopover
+          <Popover
             heading="So many memories!"
             message={
               <span>
@@ -107,7 +68,7 @@ const About = () => {
             }
           >
             3D Pinball Space Cadet
-          </CustomPopover>
+          </Popover>
           . I was really fascinated by how much fun computers could be.
         </p>
         <p>
@@ -119,7 +80,7 @@ const About = () => {
         </p>
         <p>
           Since then, I&apos;ve had multiple jobs where I&apos;ve met{" "}
-          <CustomPopover
+          <Popover
             heading="Software wizards"
             message={
               <span>
@@ -137,7 +98,7 @@ const About = () => {
             }
           >
             other passionate developers
-          </CustomPopover>
+          </Popover>
           , many of whom have shaped my career and taught me lots of the things
           I know today.
         </p>

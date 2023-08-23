@@ -111,7 +111,8 @@ const Experience = () => {
                 className={styles.experience__date}
               >{`${job.from} - ${job.to}`}</span>
               <p className={styles.experience__role}>
-                <span className={styles.experience__role}>{job.role}</span> at{" "}
+                <span>{job.role}</span>
+                {" at "}
                 <span className={styles.experience__company}>
                   {job.company}
                 </span>

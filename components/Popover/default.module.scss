@@ -1,0 +1,33 @@
+.popover {
+  &__trigger {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--epsilon);
+    cursor: pointer;
+    display: inline;
+    text-align: start;
+  }
+  &__content {
+    box-shadow: 0 2px 4px rgba(0, 10, 20, 0.1);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: min(90%, 40ch);
+    background-color: var(--gray-900);
+    position: relative;
+    color: var(--white);
+    & a {
+      color: var(--epsilon);
+    }
+  }
+  &__heading {
+    font-size: var(--font-size-18);
+  }
+  &__description {
+    font-size: var(--font-size-15);
+  }
+  &__arrow {
+    fill: var(--gray-900);
+  }
+}
