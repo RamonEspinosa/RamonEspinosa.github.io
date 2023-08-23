@@ -1,3 +1,4 @@
+import Popover from "components/Popover/Default";
 import React from "react";
 import styles from "./styles.module.scss";
 
@@ -19,7 +20,14 @@ const jobs: Job[] = [
       <>
         <p>
           Back in 2022, I made the tough decision to leave Mexico and migrate to
-          Canada. It&apos;s been quite a journey, but I have no regrets.
+          Canada. It&apos;s been quite a journey, but I have{" "}
+          <Popover
+            heading="However..."
+            message="Good tacos, delicious enchiladas, tasty chilaquiles and spicy salsas. They're all just a distant memory now 😔"
+          >
+            no regrets
+          </Popover>
+          .
         </p>
         <p>
           I&apos;ve been working full-time at TTT Studios since then. The team
@@ -55,8 +63,14 @@ const jobs: Job[] = [
     description: (
       <>
         <p>
-          This job was awesome and very challenging since the company was
-          blowing up (a digital pharmacy during COVID-19 era).
+          This job was awesome and very challenging since the company{" "}
+          <Popover
+            heading="COVID-19"
+            message="The pandemic gave this digital pharmacy a big boost thanks to contactless deliveries, telehealth, and the fear of transmission."
+          >
+            was blowing up
+          </Popover>
+          .
         </p>
         <p>
           My colleagues were so much better than me, and I started experiencing
@@ -82,12 +96,17 @@ const jobs: Job[] = [
         <p>
           During my university days, I landed an internship at a small startup
           near my home. Things were going great, and the boss liked my work so
-          much that they offered me a full-time gig, which I stuck with for two
-          years.
+          much that they offered me a full-time position.
         </p>
         <p>
           Eventually, I decided it was time to move on because I realized
-          staying put wasn&apos;t doing wonders for my career. The tech stack
+          staying put wasn&apos;t doing wonders for my career.{" "}
+          <Popover
+            heading="Oh these?"
+            message="No pipelines in sight, just the chaos of MySQL, PHP, jQuery, and manual FTP deployments 😫🔌💻."
+          >
+            The tech stack
+          </Popover>{" "}
           felt seriously outdated, and I needed a change.
         </p>
       </>
