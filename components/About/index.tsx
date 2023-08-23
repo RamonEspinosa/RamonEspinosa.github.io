@@ -94,7 +94,8 @@ const About = () => {
             message={
               <span>
                 I feel someone should port this game to the web. It was really
-                fun to play back when there was no internet. Feel free to watch{" "}
+                fun to play back when there was no internet. Feel free to watch
+                a{" "}
                 <Link
                   href="https://www.youtube.com/watch?v=uMZwb05pPnI"
                   target="_blank"
@@ -113,8 +114,8 @@ const About = () => {
           Some time later, in my teenage years, I took courses on technical
           computer assistance. This earned me some gigs and money, which I then
           used to assemble my own PC. The joy of profiting from my hobby
-          inspired me to pursue computer systems engineering. With the support
-          of my family and friends, I graduated with honors.
+          inspired me to pursue a computer systems engineering. With the support
+          of my family and friends, I graduated with honors in 2019.
         </p>
         <p>
           Since then, I&apos;ve had multiple jobs where I&apos;ve met{" "}

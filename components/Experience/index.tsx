@@ -18,12 +18,12 @@ const jobs: Job[] = [
     description: (
       <>
         <p>
-          In 2022, I made the tough decision to leave Mexico and migrate to
+          Back in 2022, I made the tough decision to leave Mexico and migrate to
           Canada. It&apos;s been quite a journey, but I have no regrets.
         </p>
         <p>
           I&apos;ve been working full-time at TTT Studios since then. The team
-          is great, and the job is challenging. Life is good.
+          is great, and the job keeps me challenged. Life is good.
         </p>
       </>
     ),
@@ -56,18 +56,17 @@ const jobs: Job[] = [
       <>
         <p>
           This job was awesome and very challenging since the company was
-          blowing up.
+          blowing up (a digital pharmacy during COVID-19 era).
         </p>
         <p>
-          However, my coworkers were so much better than me, and I started
-          experiencing imposter syndrome. On top of that, I had to learn a whole
-          new tech stack from scratch, which added even more pressure to the
-          mix.
+          My colleagues were so much better than me, and I started experiencing
+          imposter syndrome. On top of that, I had to learn a whole new tech
+          stack from scratch, which added even more pressure to the mix.
         </p>
         <p>
           Even so, I enjoyed working there. My boss and teammates were the best,
-          always helping me out. I have lots of respect for those guys as they
-          taught me tons of valuable stuff.
+          always helping me out. I have lots of respect for those guys because
+          they taught me tons of valuable stuff.
         </p>
       </>
     ),
@@ -81,14 +80,15 @@ const jobs: Job[] = [
     description: (
       <>
         <p>
-          As part of my university studies, I got an internship in a small
-          startup near my home. Things were going quite well, and the boss liked
-          my work so much that they offered me a full-time position. I stayed
-          there for 2 years.
+          During my university days, I landed an internship at a small startup
+          near my home. Things were going great, and the boss liked my work so
+          much that they offered me a full-time gig, which I stuck with for two
+          years.
         </p>
         <p>
-          Eventually, I decided to move on because I realized staying was not
-          good for my career since the tech stack felt very outdated.
+          Eventually, I decided it was time to move on because I realized
+          staying put wasn&apos;t doing wonders for my career. The tech stack
+          felt seriously outdated, and I needed a change.
         </p>
       </>
     ),
