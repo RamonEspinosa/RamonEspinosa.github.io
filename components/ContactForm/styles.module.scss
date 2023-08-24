@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: min(90%, 350px);
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  &__textarea {
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid var(--gray-200);
+    padding: var(--spacing-xs);
+  }
+  &__submit {
+    cursor: pointer;
+    align-self: flex-end;
+    border-radius: 4px;
+    padding: var(--spacing-xxs) var(--spacing-md);
+    border: 1px solid var(--epsilon);
+    background-color: transparent;
+    color: var(--epsilon);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-18);
+    &:hover {
+      border: 1px solid var(--white);
+      color: var(--white);
+    }
+  }
+}
