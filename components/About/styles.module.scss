@@ -8,15 +8,17 @@
   &__section {
     background-image: linear-gradient(
       180deg,
-      hsl(240deg 10% 4%) 0%,
-      hsl(240deg 17% 5%) 11%,
-      hsl(240deg 26% 5%) 22%,
-      hsl(234deg 33% 6%) 33%,
-      hsl(231deg 41% 7%) 44%,
-      hsl(227deg 51% 7%) 56%,
-      hsl(227deg 56% 8%) 67%,
-      hsl(225deg 64% 9%) 78%,
-      hsl(224deg 71% 9%) 89%,
+      hsl(225deg 67% 1%) 0%,
+      hsl(230deg 60% 2%) 9%,
+      hsl(222deg 71% 3%) 18%,
+      hsl(226deg 68% 4%) 27%,
+      hsl(221deg 73% 4%) 36%,
+      hsl(224deg 70% 5%) 45%,
+      hsl(224deg 74% 6%) 55%,
+      hsl(222deg 76% 7%) 64%,
+      hsl(223deg 74% 8%) 73%,
+      hsl(222deg 77% 8%) 82%,
+      hsl(222deg 79% 9%) 91%,
       hsl(221deg 80% 10%) 100%
     );
     color: var(--white);

@@ -1,4 +1,4 @@
-const gradients = [
+export const NAME_GRADIENT = [
   // delta to epsilon
   `-webkit-linear-gradient(
     0deg,
@@ -43,4 +43,3 @@ const gradients = [
       hsl(54deg 98% 22%) 100%
     )`,
 ];
-export default gradients;

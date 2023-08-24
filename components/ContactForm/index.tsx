@@ -21,7 +21,7 @@ const ContactForm = () => {
         <textarea
           className={styles.form__textarea}
           placeholder="Your message here..."
-          rows={5}
+          rows={3}
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}

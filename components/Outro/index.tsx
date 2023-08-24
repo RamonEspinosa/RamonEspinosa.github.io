@@ -1,7 +1,10 @@
 import React from "react";
-import { motion, Variants } from "framer-motion";
+import { m, LazyMotion, domAnimation, Variants } from "framer-motion";
+
 import styles from "./styles.module.scss";
 import ContactForm from "components/ContactForm";
+import GradientTextButton from "components/GradientTextButton";
+import { NAME_GRADIENT } from "components/GradientTextButton/palettes";
 
 const variants: Variants = {
   offscreen: {
@@ -21,24 +24,25 @@ const variants: Variants = {
 
 const Outro = () => {
   return (
-    <motion.div className={styles.outro}>
-      <motion.div
-        className={styles.outro__banner}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true }}
-        variants={variants}
-      >
-        <div className={styles.outro__container}>
-          <p className={styles.outro__title}>
+    <LazyMotion features={domAnimation}>
+      <div className={styles.outro}>
+        <m.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true }}
+          variants={variants}
+          className={styles.outro__container}
+        >
+          <GradientTextButton palette={NAME_GRADIENT}>
             Let&apos;s
             <br />
             <span className={styles.outro__talk}>talk!</span>
-          </p>
+          </GradientTextButton>
+
           <ContactForm />
-        </div>
-      </motion.div>
-    </motion.div>
+        </m.div>
+      </div>
+    </LazyMotion>
   );
 };
 

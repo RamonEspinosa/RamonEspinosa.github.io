@@ -1,39 +1,35 @@
 .outro {
   flex: 0 0 auto;
-  background-color: var(--alpha);
+  background-color: var(--black);
   color: var(--white);
-  padding: 0;
+  padding-block: 80px;
   overflow: hidden;
   position: relative;
   isolation: isolate;
-  &::before {
-    display: block;
-    height: 20px;
-    background-color: var(--alpha-secondary);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    content: " ";
-  }
 
-  &__banner {
-    padding-block: 60px;
-    background-color: var(--alpha-secondary);
-  }
   &__container {
     width: min(80ch, 90%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    flex-direction: column;
+    gap: 40px;
+    @media (min-width: 1100px) {
+      flex-direction: row;
+    }
   }
 
   &__title {
     font-size: var(--font-size-88);
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 1px;
+    color: var(--gray-200);
+    line-height: 0.9;
   }
   &__talk {
-    padding-left: 1ch;
+    @media (min-width: 1100px) {
+      padding-left: 1ch;
+    }
   }
 }
