@@ -6,22 +6,23 @@
     list-style-type: none;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   &__element {
     pointer-events: auto;
     text-align: center;
     vertical-align: middle;
-    :hover {
-      color: var(--epsilon);
-    }
+    background-color: transparent;
   }
   &__link {
     display: block;
-    background-color: var(--alpha);
+    border: 1px solid var(--epsilon);
     color: var(--white);
     padding: var(--spacing-sm);
     border-radius: 50%;
+    &:hover {
+      color: var(--epsilon-secondary);
+    }
   }
 }

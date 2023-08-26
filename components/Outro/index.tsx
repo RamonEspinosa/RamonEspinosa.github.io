@@ -31,15 +31,17 @@ const Outro = () => {
           whileInView="onscreen"
           viewport={{ once: true }}
           variants={variants}
-          className={styles.outro__container}
+          className={styles.outro__wrapper}
         >
-          <GradientTextButton palette={NAME_GRADIENT}>
-            Let&apos;s
-            <br />
-            <span className={styles.outro__talk}>talk!</span>
-          </GradientTextButton>
+          <div className={styles.outro__container}>
+            <GradientTextButton palette={NAME_GRADIENT}>
+              Let&apos;s
+              <br />
+              <span className={styles.outro__talk}>talk!</span>
+            </GradientTextButton>
 
-          <ContactForm />
+            <ContactForm />
+          </div>
         </m.div>
       </div>
     </LazyMotion>

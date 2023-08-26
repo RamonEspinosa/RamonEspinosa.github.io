@@ -5,7 +5,7 @@
   @include generate-font-size(8, 96);
 
   --white: hsl(0, 0%, 100%);
-  --black: hsl(221, 80%, 1%);
+  --black: hsl(217, 100%, 1%);
   --gray-100: hsl(0, 0%, 90%);
   --gray-200: hsl(0, 0%, 80%);
   --gray-300: hsl(0, 0%, 70%);
@@ -16,12 +16,21 @@
   --gray-800: hsl(0, 0%, 20%);
   --gray-900: hsl(0, 0%, 10%);
 
-  --alpha: hsl(221, 80%, 10%);
-  --alpha-secondary: hsl(221, 80%, 13%);
-  --beta: hsl(253, 72%, 30%);
-  --gamma: hsl(27, 65%, 30%);
-  --delta: hsl(54, 98%, 30%);
-  --epsilon: hsl(189, 88%, 30%);
+  --alpha: hsl(216, 100%, 4%);
+  --alpha-secondary: hsl(217, 100%, 3%);
+  --alpha-tertiary: hsl(217, 100%, 2%);
+  --beta: hsl(211, 100%, 12%);
+  --beta-secondary: hsl(195, 91%, 17%);
+  --beta-tertiary: hsl(179, 90%, 15%);
+  --gamma: hsl(209, 100%, 20%);
+  --gamma-secondary: hsl(193, 91%, 26%);
+  --gamma-tertiary: hsl(177, 90%, 24%);
+  --delta: hsl(46, 100%, 50%);
+  --delta-secondary: hsl(40, 90%, 48%);
+  --delta-tertiary: hsl(33, 100%, 53%);
+  --epsilon: hsl(50, 100%, 52%);
+  --epsilon-secondary: hsl(44, 98%, 46%);
+  --epsilon-tertiary: hsl(38, 100%, 51%);
 
   --breakpoint-tablet-min: 550px;
   --breakpoint-laptop-min: 1100px;

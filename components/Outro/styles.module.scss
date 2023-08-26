@@ -1,11 +1,27 @@
 .outro {
   flex: 0 0 auto;
-  background-color: var(--black);
   color: var(--white);
-  padding-block: 80px;
+  padding-block: 0;
   overflow: hidden;
   position: relative;
   isolation: isolate;
+  background-color: var(--alpha-tertiary);
+
+  &::before {
+    width: 100%;
+    background-color: var(--alpha);
+    padding-block: 12px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: " ";
+  }
+
+  &__wrapper {
+    width: 100%;
+    background-color: var(--alpha);
+    padding-block: 80px;
+  }
 
   &__container {
     width: min(80ch, 90%);

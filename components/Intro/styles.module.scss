@@ -1,10 +1,23 @@
 .intro {
   &__section {
-    height: 100%;
+    min-height: 100%;
+    background: linear-gradient(
+      180deg,
+      var(--alpha) 50%,
+      var(--alpha-secondary) 100%
+    );
+    display: grid;
+    place-items: center;
+    margin-block: auto;
+  }
+  &__wrapper {
+    margin-block: auto;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 90%;
     margin-inline: auto;
     max-width: var(--breakpoint-desktop-min);
     @media (min-width: 1100px) {
@@ -22,9 +35,16 @@
     color: var(--white);
     aspect-ratio: 1/1;
     width: min(400px, 90%);
+    max-width: 50%;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
+    @media (min-width: 550px) {
+      max-width: 25%;
+    }
+    @media (min-width: 110px) {
+      max-width: 35%;
+    }
   }
   &__picture {
     height: auto;
