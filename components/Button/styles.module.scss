@@ -1,0 +1,21 @@
+.button {
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 10px;
+  padding: var(--spacing-xxs) var(--spacing-md);
+  border: 1px solid var(--epsilon);
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-18);
+  &[data-rounded="true"] {
+    border-radius: 50%;
+  }
+  &[data-size="lg"] {
+    padding: var(--spacing-sm);
+  }
+}

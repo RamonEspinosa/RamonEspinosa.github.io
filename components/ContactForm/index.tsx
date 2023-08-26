@@ -1,3 +1,4 @@
+import Button from "components/Button";
 import { Send } from "components/Icons";
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
@@ -27,10 +28,10 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
       </label>
-      <button className={styles.form__submit}>
+      <Button>
         <Send />
         Send
-      </button>
+      </Button>
     </form>
   );
 };

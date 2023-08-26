@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { m, LazyMotion, domAnimation } from "framer-motion";
 import styles from "./styles.module.scss";
+import Button from "components/Button";
 
 interface Link {
   to: string;
@@ -42,14 +43,10 @@ const Contact = () => {
       <ul className={styles.contact__list}>
         {links.map(({ Icon, label, to, target = "_blank" }) => (
           <li className={styles.contact__element} key={label}>
-            <Link href={to} target={target}>
-              <m.span
-                className={styles.contact__link}
-                whileHover={{ scale: 1.2 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              >
+            <Link href={to} target={target} passHref>
+              <Button as={m.span} rounded size="lg" scale={1.2}>
                 <Icon aria-label={label} />
-              </m.span>
+              </Button>
             </Link>
           </li>
         ))}
