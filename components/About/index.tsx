@@ -90,7 +90,9 @@ const About = () => {
                 <ul className={styles.about__wizards}>
                   {wizards.map((wizard) => (
                     <li key={wizard.name}>
-                      <Link href={wizard.href}>{wizard.name}</Link>
+                      <Link href={wizard.href} target="_blank">
+                        {wizard.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
