@@ -1,7 +1,7 @@
 import { Github, Mail, Phone, Resume } from "components/Icons";
 import Link from "next/link";
 import React from "react";
-import { m, LazyMotion, domAnimation } from "framer-motion";
+import { m } from "framer-motion";
 import styles from "./styles.module.scss";
 import Button from "components/Button";
 
@@ -39,19 +39,17 @@ const links: Link[] = [
 
 const Contact = () => {
   return (
-    <LazyMotion features={domAnimation}>
-      <ul className={styles.contact__list}>
-        {links.map(({ Icon, label, to, target = "_blank" }) => (
-          <li className={styles.contact__element} key={label}>
-            <Link href={to} target={target} passHref>
-              <Button as={m.span} rounded size="lg" scale={1.2}>
-                <Icon aria-label={label} />
-              </Button>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </LazyMotion>
+    <ul className={styles.contact__list}>
+      {links.map(({ Icon, label, to, target = "_blank" }) => (
+        <li className={styles.contact__element} key={label}>
+          <Link href={to} target={target} passHref>
+            <Button as={m.span} rounded size="lg" scale={1.2}>
+              <Icon aria-label={label} />
+            </Button>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 

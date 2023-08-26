@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  m,
-  LazyMotion,
-  domAnimation,
-  useMotionValue,
-  useTransform,
-  useSpring,
-} from "framer-motion";
+import { m, useMotionValue, useTransform, useSpring } from "framer-motion";
 import styles from "./styles.module.scss";
 
 interface Props {
@@ -32,20 +25,18 @@ const GradientTextButton = ({ children, palette }: Props) => {
   );
 
   return (
-    <LazyMotion features={domAnimation}>
-      <m.button
-        className={styles.button}
-        style={{ backgroundImage }}
-        onClick={() => {
-          setGradient((value) => {
-            const next = value + 1;
-            return next > palette.length - 1 ? 0 : next;
-          });
-        }}
-      >
-        {children}
-      </m.button>
-    </LazyMotion>
+    <m.button
+      className={styles.button}
+      style={{ backgroundImage }}
+      onClick={() => {
+        setGradient((value) => {
+          const next = value + 1;
+          return next > palette.length - 1 ? 0 : next;
+        });
+      }}
+    >
+      {children}
+    </m.button>
   );
 };
 

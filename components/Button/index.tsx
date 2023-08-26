@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import styles from "./styles.module.scss";
 
 interface ButtonProps {
   // use motion.span when part of an HTMLAnchorElement
-  as?: typeof motion.button | typeof motion.span;
+  as?: typeof m.button | typeof m.span;
   children: React.ReactNode;
   rounded?: boolean;
   size?: "lg" | "md";
@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 const Button = ({
-  as: Renderer = motion.button,
+  as: Renderer = m.button,
   children,
   rounded,
   size = "md",
@@ -23,7 +23,11 @@ const Button = ({
     () => ({
       hovered: {
         scale,
-        transition: { type: "spring", stiffness: 400, damping: 10 },
+        transition: {
+          type: "spring",
+          stiffness: 400,
+          damping: 10,
+        },
       },
       hoveredText: {
         color: "hsl(44, 98%, 46%)",
@@ -31,12 +35,17 @@ const Button = ({
           duration: 0.2,
         },
       },
+      initial: {
+        scale: 1,
+        color: "hsl(0, 0%, 100%)",
+      },
     }),
     [scale]
   );
   return (
     <Renderer
       variants={variants}
+      initial={"initial"}
       whileHover={["hovered", "hoveredText"]}
       className={styles.button}
       data-rounded={rounded}

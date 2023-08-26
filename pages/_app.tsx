@@ -2,6 +2,7 @@ import React from "react";
 import { AppProps } from "next/app";
 import { Inter } from "next/font/google";
 import "styles/global.scss";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,9 @@ export default function App({ Component, pageProps }: AppProps) {
             helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
         }
       `}</style>
-      <Component {...pageProps} />
+      <LazyMotion strict features={domAnimation}>
+        <Component {...pageProps} />
+      </LazyMotion>
     </>
   );
 }

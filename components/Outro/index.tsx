@@ -1,5 +1,5 @@
 import React from "react";
-import { m, LazyMotion, domAnimation, Variants } from "framer-motion";
+import { m, Variants } from "framer-motion";
 
 import styles from "./styles.module.scss";
 import ContactForm from "components/ContactForm";
@@ -24,27 +24,25 @@ const variants: Variants = {
 
 const Outro = () => {
   return (
-    <LazyMotion features={domAnimation}>
-      <div className={styles.outro}>
-        <m.div
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true }}
-          variants={variants}
-          className={styles.outro__wrapper}
-        >
-          <div className={styles.outro__container}>
-            <GradientTextButton palette={NAME_GRADIENT}>
-              Let&apos;s
-              <br />
-              <span className={styles.outro__talk}>talk!</span>
-            </GradientTextButton>
+    <div className={styles.outro}>
+      <m.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={variants}
+        className={styles.outro__wrapper}
+      >
+        <div className={styles.outro__container}>
+          <GradientTextButton palette={NAME_GRADIENT}>
+            Let&apos;s
+            <br />
+            <span className={styles.outro__talk}>talk!</span>
+          </GradientTextButton>
 
-            <ContactForm />
-          </div>
-        </m.div>
-      </div>
-    </LazyMotion>
+          <ContactForm />
+        </div>
+      </m.div>
+    </div>
   );
 };
 
