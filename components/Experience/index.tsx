@@ -1,6 +1,8 @@
 import Popover from "components/Popover/Default";
 import React from "react";
+import { m, Variants } from "framer-motion";
 import styles from "./styles.module.scss";
+import { ARTICLE_ANIMATION } from "config/animation";
 
 interface Job {
   from: number;
@@ -125,14 +127,62 @@ const jobs: Job[] = [
   },
 ];
 
+const container: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.01,
+    },
+  },
+};
+const listItem: Variants = {
+  hidden: { opacity: 0, x: "-50%" },
+  show: (i) => ({
+    opacity: 1,
+    x: "0%",
+    transition: {
+      delay: i * 0.1,
+      duration: 0.5,
+    },
+    type: "tween",
+  }),
+};
+
 const Experience = () => {
   return (
     <section className={styles.experience__section}>
-      <article className={styles.experience__container}>
+      <m.article
+        {...ARTICLE_ANIMATION}
+        initial={{
+          opacity: 0,
+          y: "0%",
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeIn",
+        }}
+        className={styles.experience__container}
+      >
         <h2>Experience</h2>
-        <ol reversed className={styles.experience__timeline}>
-          {jobs.map((job) => (
-            <li key={job.company} className={styles.experience__entry}>
+        <m.ol
+          variants={container}
+          initial="hidden"
+          animate="show"
+          reversed
+          className={styles.experience__timeline}
+        >
+          {jobs.map((job, i) => (
+            <m.li
+              variants={listItem}
+              custom={i}
+              key={job.company}
+              initial="hidden"
+              whileInView="show"
+              className={styles.experience__entry}
+            >
               <div className={styles["experience__entry-dot"]} aria-hidden>
                 ⚬
               </div>
@@ -150,10 +200,10 @@ const Experience = () => {
               <div className={styles.experience__description}>
                 {job.description}
               </div>
-            </li>
+            </m.li>
           ))}
-        </ol>
-      </article>
+        </m.ol>
+      </m.article>
     </section>
   );
 };

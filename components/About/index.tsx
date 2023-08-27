@@ -3,6 +3,7 @@ import React from "react";
 import { m } from "framer-motion";
 import styles from "./styles.module.scss";
 import Popover from "components/Popover/Default";
+import { ARTICLE_ANIMATION } from "config/animation";
 
 const wizards = [
   {
@@ -22,24 +23,7 @@ const wizards = [
 const About = () => {
   return (
     <section className={styles.about__section}>
-      <m.article
-        initial={{
-          opacity: 0,
-          y: "100%",
-        }}
-        whileInView={{
-          opacity: 1,
-          y: "0%",
-        }}
-        viewport={{
-          once: true,
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeOut",
-        }}
-        className={styles.about__biography}
-      >
+      <m.article {...ARTICLE_ANIMATION} className={styles.about__biography}>
         <h2>Get to know me better</h2>
         <p>
           I first interacted with a computer at 8, when my brother taught me how
