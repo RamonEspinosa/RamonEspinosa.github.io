@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { m } from "framer-motion";
 import styles from "./styles.module.scss";
 import Popover from "components/Popover/Default";
 
@@ -21,7 +22,24 @@ const wizards = [
 const About = () => {
   return (
     <section className={styles.about__section}>
-      <article className={styles.about__biography}>
+      <m.article
+        initial={{
+          opacity: 0,
+          y: "100%",
+        }}
+        whileInView={{
+          opacity: 1,
+          y: "0%",
+        }}
+        viewport={{
+          once: true,
+        }}
+        transition={{
+          duration: 0.5,
+          ease: "easeOut",
+        }}
+        className={styles.about__biography}
+      >
         <h2>Get to know me better</h2>
         <p>
           I first interacted with a computer at 8, when my brother taught me how
@@ -109,7 +127,7 @@ const About = () => {
           Empires 2, now a computer systems engineer. My journey involved tech
           courses, jobs, and collaborations, yielding 5+ years of experience.
         </p>
-      </article>
+      </m.article>
     </section>
   );
 };
