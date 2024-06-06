@@ -18,6 +18,8 @@ jobs:
       - run: npm run build
       - name: Add CNAME
         run: echo ${{env.DOMAIN}} >> ${{env.BUILD_DIR}}/CNAME
+      - name: Add .nojekyll
+        run: touch ${{env.BUILD_DIR}}/.nojekyll
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
