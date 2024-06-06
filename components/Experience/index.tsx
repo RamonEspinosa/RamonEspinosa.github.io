@@ -17,7 +17,7 @@ const jobs: Job[] = [
     from: 2022,
     to: "Today",
     company: "TTT Studios",
-    role: "Front-end developer",
+    role: "Full-stack developer",
     description: (
       <>
         <p>
