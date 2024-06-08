@@ -6,7 +6,7 @@ const Experience = () => {
       <h2 className={styles.curriculum__title}>Professional Experience</h2>
       <ul className={styles.curriculum__list}>
         <li>
-          <p className={styles.experience__title}>
+          <p>
             <span className={styles.experience__role}>
               Full-stack Developer
             </span>{" "}
@@ -27,7 +27,7 @@ const Experience = () => {
           </div>
         </li>
         <li>
-          <p className={styles.experience__title}>
+          <p>
             <span className={styles.experience__role}>Front-end Developer</span>{" "}
             at{" "}
             <a href="https://dacodes.com" target="_blank">
@@ -45,7 +45,7 @@ const Experience = () => {
           </p>
         </li>
         <li>
-          <p className={styles.experience__title}>
+          <p>
             <span className={styles.experience__role}>
               Full-stack Developer
             </span>{" "}
@@ -68,7 +68,7 @@ const Experience = () => {
           </p>
         </li>
         <li>
-          <p className={styles.experience__title}>
+          <p>
             <span className={styles.experience__role}>
               Full-stack Developer
             </span>{" "}
