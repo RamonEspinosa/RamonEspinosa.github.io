@@ -7,7 +7,6 @@ import styles from "./styles.module.scss";
 const CV = () => {
   return (
     <div className={styles.curriculum}>
-      <h1 className={styles.curriculum__title}>Juan Ramon Espinosa Lopez</h1>
       <Header />
       <Knowledge />
       <Experience />

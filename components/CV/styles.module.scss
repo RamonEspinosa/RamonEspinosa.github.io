@@ -17,10 +17,17 @@
   &__title {
     font-family: var(--montserrat);
   }
-  text-align: justify;
 }
 
 .header {
+  &__website {
+    @extend .bold;
+    text-align: right;
+  }
+  &__title {
+    @extend .curriculum__title;
+    grid-column: 1/-1;
+  }
   &__contact {
     display: flex;
     justify-content: space-between;
