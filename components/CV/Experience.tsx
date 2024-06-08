@@ -17,10 +17,13 @@ const Experience = () => {
             <span className={styles.experience__date}>(2022 - Today)</span>
           </p>
           <div className={styles.experience__description}>
-            Building and maintaining web apps made with Node.js and
-            containerizing them with Docker. Helping with CI/CD pipelines for
+            Building and maintaining web apps made with{" "}
+            <span className={styles.tech}>Node.js</span> and{" "}
+            <span className={styles.tech}>Docker</span>. Writing E2E,
+            integration, and unit tests to ensure application functionality and
+            seamless component interaction. Helping with CI/CD pipelines for
             automated testing and deployments. Mentoring junior developers to
-            enhance team skills. Some relevant projects include:
+            enhance team skills.
           </div>
         </li>
         <li>
@@ -39,9 +42,6 @@ const Experience = () => {
             <span className={styles.tech}>Redux</span>. Played a key role in
             developing and implementing responsive web applications, ensuring
             seamless integration of UI/UX design with front-end architecture.
-            Focused on optimizing application performance through efficient
-            state management and modular component structures, contributing to
-            the overall quality and success of the projects.
           </p>
         </li>
         <li>
