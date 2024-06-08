@@ -1,4 +1,3 @@
-import Projects from "./Projects";
 import styles from "./styles.module.scss";
 
 const Experience = () => {
@@ -22,7 +21,6 @@ const Experience = () => {
             containerizing them with Docker. Helping with CI/CD pipelines for
             automated testing and deployments. Mentoring junior developers to
             enhance team skills. Some relevant projects include:
-            <Projects />
           </div>
         </li>
         <li>
@@ -82,11 +80,7 @@ const Experience = () => {
             <span className={styles.experience__date}>(2018 - 2020)</span>
           </p>
           <p className={styles.experience__description}>
-            Worked on a team environment implementing bespoke software using{" "}
-            <span className={styles.tech}>MongoDB</span>,{" "}
-            <span className={styles.tech}>Express</span>,{" "}
-            <span className={styles.tech}>React</span> and{" "}
-            <span className={styles.tech}>Node</span>.
+            Worked on a team environment implementing bespoke software
           </p>
         </li>
       </ul>

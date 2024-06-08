@@ -1,4 +1,3 @@
-import Contributions from "./Contributions";
 import Education from "./Education";
 import Experience from "./Experience";
 import Header from "./Header";
@@ -12,7 +11,6 @@ const CV = () => {
       <Header />
       <Knowledge />
       <Experience />
-      <Contributions />
       <Education />
     </div>
   );

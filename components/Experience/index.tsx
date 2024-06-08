@@ -102,25 +102,8 @@ const jobs: Job[] = [
         </p>
         <p>
           Eventually, I decided it was time to move on because I realized
-          staying put wasn&apos;t doing wonders for my career,{" "}
-          <Popover
-            heading="Oh these?"
-            message={
-              <>
-                <p>
-                  No pipelines in sight, just the chaos of MySQL, PHP, jQuery,
-                  and manual FTP deployments 😫🔌💻.
-                </p>
-                <p>
-                  But this helped me appreciate functional programming, CI/CD
-                  workflows and testing more.
-                </p>
-              </>
-            }
-          >
-            the tech stack
-          </Popover>{" "}
-          felt seriously outdated, and I needed a change.
+          staying put wasn&apos;t doing wonders for my career, and I just needed
+          a change.
         </p>
       </>
     ),
