@@ -1,0 +1,97 @@
+.bold {
+  font-weight: 700;
+}
+.tech {
+  font-weight: 600;
+}
+
+.curriculum {
+  --letter-width: 21.59cm;
+  max-width: var(--letter-width);
+  margin-inline: auto;
+  font-family: var(--open-sans);
+  &__list {
+    list-style-type: circle;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    font-family: var(--montserrat);
+  }
+  text-align: justify;
+}
+
+.header {
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.knowledge {
+  &__list {
+    @extend .curriculum__list;
+    color: hsl(0deg, 0%, 10%);
+    font-size: 0.9em;
+  }
+}
+.experience {
+  &__date {
+    font-size: 0.8em;
+    line-height: 1;
+    color: hsl(0deg, 0%, 30%);
+  }
+  &__title {
+    line-height: 1.1;
+  }
+  &__role {
+    font-weight: 700;
+  }
+}
+
+.experience__description,
+.education__school,
+.oss__description {
+  padding-left: 10px;
+  color: hsl(0deg, 0%, 10%);
+  font-size: 0.9em;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  &__title {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  &__list {
+    li {
+      color: hsl(0deg, 0%, 10%);
+      line-height: 1.2;
+    }
+  }
+}
+
+.education {
+  &__title {
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  &__date {
+    font-size: 0.8em;
+    line-height: 1;
+    color: hsl(0deg, 0%, 30%);
+  }
+}
+.oss {
+  &__description {
+    padding-left: 0;
+  }
+  &__project {
+    font-weight: 700;
+  }
+}
