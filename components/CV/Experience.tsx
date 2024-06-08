@@ -56,13 +56,12 @@ const Experience = () => {
             <span className={styles.experience__date}>(2020 - 2021)</span>
           </p>
           <p className={styles.experience__description}>
-            Programming web and mobile applications with{" "}
+            Programmed web and mobile applications with{" "}
             <span className={styles.tech}>React</span> and{" "}
-            <span className={styles.tech}>React Native</span>. Serving a{" "}
+            <span className={styles.tech}>React Native</span>. Maintained a{" "}
             <span className={styles.tech}>GraphQL</span> API with an integration
-            of Express with Apollo Server. Using numerous Cloud computing
-            services offered by AWS like{" "}
-            <span className={styles.tech}>EC2</span>,{" "}
+            of Express and Apollo Server. Used numerous Cloud computing services
+            offered by AWS like <span className={styles.tech}>EC2</span>,{" "}
             <span className={styles.tech}>CloudWatch</span>,{" "}
             <span className={styles.tech}>Lambda</span>, and{" "}
             <span className={styles.tech}>Elastic Beanstalk</span>.
