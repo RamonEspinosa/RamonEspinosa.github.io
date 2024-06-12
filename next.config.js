@@ -1,12 +1,15 @@
+const { NEXT_OUTPUT } = process.env;
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  output: "export",
+  ...(NEXT_OUTPUT && {
+    output: NEXT_OUTPUT,
+  }),
   reactStrictMode: true,
   transpilePackages: ["three"],
   images: {
-    unoptimized: true,
+    unoptimized: NEXT_OUTPUT === "export",
   },
 };
 
