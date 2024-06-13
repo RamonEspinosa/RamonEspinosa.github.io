@@ -6,6 +6,7 @@ on:
 env:
   BUILD_DIR: ./out
   DOMAIN: iamjuan.dev
+  NEXT_OUTPUT: export
 jobs:
   deploy:
     runs-on: ubuntu-latest
