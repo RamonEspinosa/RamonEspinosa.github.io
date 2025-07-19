@@ -4,6 +4,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      target: prod
     container_name: iamjuan_frontend
+    environment:
+      - WATCHPACK_POLLING=true
+      - NEXT_OUTPUT=standalone
+      - HOSTNAME=0.0.0.0
     ports:
       - 8080:80
+    command: node .next/standalone/server.js
