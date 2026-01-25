@@ -5,7 +5,7 @@ on:
     branches: [dev]
 env:
   BUILD_DIR: ./out
-  DOMAIN: github.iamjuan.dev
+  DOMAIN: RamonEspinosa.github.io
   NEXT_OUTPUT: export
 jobs:
   deploy:
